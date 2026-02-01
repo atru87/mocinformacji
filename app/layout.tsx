@@ -5,7 +5,6 @@ import './globals.css'
 import Link from 'next/link'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import ViewCounter from '@/components/ViewCounter'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -38,6 +37,16 @@ export default function RootLayout({
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
+        
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-549W3748MR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-549W3748MR');
+</script>
       </head>
       <body className={inter.className}>
         {/* MODERN NAVBAR */}
@@ -83,7 +92,10 @@ export default function RootLayout({
                 <p className="footer-description">
                   Twoje źródło sprawdzonej wiedzy z zakresu finansów, prawa, technologii i zdrowia.
                 </p>
-                <ViewCounter />
+                <div className="footer-badge">
+                  <i className="bi bi-shield-check me-2"></i>
+                  Zaufany portal edukacyjny
+                </div>
               </div>
 
               {/* Categories Column */}
