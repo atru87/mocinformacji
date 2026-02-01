@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import Link from 'next/link'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -28,19 +29,25 @@ export default function RootLayout({
 
   return (
     <html lang="pl">
+      <head>
+        {/* Google AdSense */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4321819036207321"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className={inter.className}>
         {/* MODERN NAVBAR */}
         <nav className="navbar navbar-expand-lg navbar-modern">
           <div className="container-fluid">
-            {/* LOGO - Czysty tekst zamiast obrazka! */}
             <Link href="/" className="navbar-brand logo-text">
               Moc<span className="text-primary">Informacji</span><span className="domain">.pl</span>
             </Link>
-
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
               <span className="navbar-toggler-icon"></span>
             </button>
-
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
                 {categories.map(cat => (
@@ -55,10 +62,10 @@ export default function RootLayout({
             </div>
           </div>
         </nav>
-
+        
         {/* Content */}
         {children}
-
+        
         {/* FOOTER */}
         <footer className="footer-modern">
           <div className="container">
@@ -91,8 +98,7 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
-
-        {/* Bootstrap JS */}
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" async></script>
       </body>
     </html>
