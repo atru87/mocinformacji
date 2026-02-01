@@ -30,36 +30,34 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <head>
-        {/* Google AdSense */}
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4321819036207321"
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
-        
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-549W3748MR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-549W3748MR');
-</script>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX');
+          `}
+        </Script>
       </head>
       <body className={inter.className}>
-        {/* MODERN NAVBAR */}
         <nav className="navbar navbar-expand-lg navbar-modern">
           <div className="container-fluid">
             <Link href="/" className="navbar-brand logo-text">
               Moc<span className="text-primary">Informacji</span><span className="domain">.pl</span>
             </Link>
-
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
               <span className="navbar-toggler-icon"></span>
             </button>
-
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
                 {categories.map(cat => (
@@ -75,15 +73,12 @@ export default function RootLayout({
           </div>
         </nav>
 
-        {/* Content */}
         {children}
 
-        {/* MODERN FOOTER */}
         <footer className="footer-enhanced">
           <div className="footer-gradient"></div>
           <div className="container py-5">
             <div className="row g-4">
-              {/* Brand Column */}
               <div className="col-lg-4 col-md-6">
                 <div className="footer-brand mb-3">
                   <i className="bi bi-stars me-2"></i>
@@ -98,7 +93,6 @@ export default function RootLayout({
                 </div>
               </div>
 
-              {/* Categories Column */}
               <div className="col-lg-4 col-md-6">
                 <h5 className="footer-heading mb-3">Kategorie</h5>
                 <ul className="footer-links list-unstyled">
@@ -113,7 +107,6 @@ export default function RootLayout({
                 </ul>
               </div>
 
-              {/* Info Column */}
               <div className="col-lg-4 col-md-6">
                 <h5 className="footer-heading mb-3">Informacje</h5>
                 <ul className="footer-links list-unstyled">
@@ -139,7 +132,6 @@ export default function RootLayout({
               </div>
             </div>
 
-            {/* Footer Bottom */}
             <hr className="footer-divider my-4" />
             <div className="row">
               <div className="col-12 text-center">
@@ -151,7 +143,6 @@ export default function RootLayout({
           </div>
         </footer>
 
-        {/* Bootstrap JS */}
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" async></script>
       </body>
     </html>
