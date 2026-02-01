@@ -5,6 +5,7 @@ import './globals.css'
 import Link from 'next/link'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import ViewCounter from '@/components/ViewCounter'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -45,9 +46,11 @@ export default function RootLayout({
             <Link href="/" className="navbar-brand logo-text">
               Moc<span className="text-primary">Informacji</span><span className="domain">.pl</span>
             </Link>
+
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
               <span className="navbar-toggler-icon"></span>
             </button>
+
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
                 {categories.map(cat => (
@@ -62,43 +65,81 @@ export default function RootLayout({
             </div>
           </div>
         </nav>
-        
+
         {/* Content */}
         {children}
-        
-        {/* FOOTER */}
-        <footer className="footer-modern">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-4">
-                <h5>MocInformacji.pl</h5>
-                <p>Twoje źródło sprawdzonej wiedzy z zakresu finansów, prawa, technologii i zdrowia.</p>
+
+        {/* MODERN FOOTER */}
+        <footer className="footer-enhanced">
+          <div className="footer-gradient"></div>
+          <div className="container py-5">
+            <div className="row g-4">
+              {/* Brand Column */}
+              <div className="col-lg-4 col-md-6">
+                <div className="footer-brand mb-3">
+                  <i className="bi bi-stars me-2"></i>
+                  MocInformacji.pl
+                </div>
+                <p className="footer-description">
+                  Twoje źródło sprawdzonej wiedzy z zakresu finansów, prawa, technologii i zdrowia.
+                </p>
+                <ViewCounter />
               </div>
-              <div className="col-md-4">
-                <h5>Kategorie</h5>
-                <ul>
+
+              {/* Categories Column */}
+              <div className="col-lg-4 col-md-6">
+                <h5 className="footer-heading mb-3">Kategorie</h5>
+                <ul className="footer-links list-unstyled">
                   {categories.map(cat => (
                     <li key={cat.slug}>
-                      <Link href={`/category/${cat.slug}`}>{cat.name}</Link>
+                      <Link href={`/category/${cat.slug}`}>
+                        <i className={`bi ${cat.icon} me-2`}></i>
+                        {cat.name}
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="col-md-4">
-                <h5>Informacje</h5>
-                <ul>
-                  <li><Link href="/polityka-prywatnosci">Polityka prywatności</Link></li>
-                  <li><Link href="/kontakt">Kontakt</Link></li>
-                  <li><Link href="/o-nas">O nas</Link></li>
+
+              {/* Info Column */}
+              <div className="col-lg-4 col-md-6">
+                <h5 className="footer-heading mb-3">Informacje</h5>
+                <ul className="footer-links list-unstyled">
+                  <li>
+                    <Link href="/polityka-prywatnosci">
+                      <i className="bi bi-shield-check me-2"></i>
+                      Polityka prywatności
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/kontakt">
+                      <i className="bi bi-envelope me-2"></i>
+                      Kontakt
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/o-nas">
+                      <i className="bi bi-info-circle me-2"></i>
+                      O nas
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
-            <div className="footer-bottom">
-              <p>© 2026 MocInformacji.pl. Wszelkie prawa zastrzeżone.</p>
+
+            {/* Footer Bottom */}
+            <hr className="footer-divider my-4" />
+            <div className="row">
+              <div className="col-12 text-center">
+                <p className="footer-copyright mb-0">
+                  © 2026 MocInformacji.pl. Wszelkie prawa zastrzeżone.
+                </p>
+              </div>
             </div>
           </div>
         </footer>
-        
+
+        {/* Bootstrap JS */}
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" async></script>
       </body>
     </html>
