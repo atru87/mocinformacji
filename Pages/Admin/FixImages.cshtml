@@ -1,0 +1,196 @@
+@page
+@using MocInformacji.Services
+@inject ImageFixerService ImageFixer
+@inject ILogger<AdminFixImagesModel> Logger
+@model AdminFixImagesModel
+
+@{
+    ViewData["Title"] = "Fix Images - Admin";
+    Layout = null; // Simple page without layout
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <style>
+        body { padding: 2rem; background: #f8f9fa; }
+        .log-entry { padding: 0.5rem; margin: 0.25rem 0; border-radius: 0.25rem; }
+        .log-fixed { background: #d1e7dd; border-left: 4px solid #0f5132; }
+        .log-error { background: #f8d7da; border-left: 4px solid #842029; }
+        .log-info { background: #cff4fc; border-left: 4px solid #055160; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h1 class="h3 mb-0">
+                            <i class="bi bi-image"></i>
+                            Image Fixer Tool
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        @if (Model.Report == null)
+                        {
+                            <div class="alert alert-info">
+                                <h4>Narzędzie do naprawiania obrazów</h4>
+                                <p>To narzędzie automatycznie:</p>
+                                <ul>
+                                    <li>Skanuje wszystkie pliki JSON w katalogu Content/</li>
+                                    <li>Sprawdza czy obrazy są dostępne</li>
+                                    <li>Podmienia niedziałające obrazy na nowe z Unsplash API</li>
+                                    <li>Aktualizuje pliki JSON z nowymi linkami</li>
+                                </ul>
+                                <hr />
+                                <p class="mb-0">
+                                    <strong>Uwaga:</strong> To narzędzie modyfikuje pliki JSON. Upewnij się, że masz backup!
+                                </p>
+                            </div>
+
+                            <form method="post">
+                                <button type="submit" class="btn btn-primary btn-lg w-100">
+                                    <i class="bi bi-tools"></i>
+                                    Rozpocznij naprawę obrazów
+                                </button>
+                            </form>
+                        }
+                        else
+                        {
+                            <div class="alert alert-success">
+                                <h4>✅ Proces zakończony!</h4>
+                                <p class="mb-0">
+                                    <strong>Naprawione:</strong> @Model.Report.Fixed<br />
+                                    <strong>Pominięte:</strong> @Model.Report.Skipped<br />
+                                    <strong>Błędy:</strong> @Model.Report.Errors.Count
+                                </p>
+                            </div>
+
+                            @if (Model.Report.FixedFiles.Any())
+                            {
+                                <div class="mt-4">
+                                    <h5>Naprawione pliki:</h5>
+                                    <div class="list-group">
+                                        @foreach (var fix in Model.Report.FixedFiles)
+                                        {
+                                            <div class="list-group-item log-fixed">
+                                                <div class="d-flex justify-content-between align-items-start">
+                                                    <div>
+                                                        <h6 class="mb-1">@Path.GetFileName(fix.FilePath)</h6>
+                                                        <small class="text-muted d-block mb-1">
+                                                            <strong>Stary:</strong> @(fix.OldUrl?.Length > 60 ? fix.OldUrl.Substring(0, 60) + "..." : fix.OldUrl)
+                                                        </small>
+                                                        <small class="text-success d-block">
+                                                            <strong>Nowy:</strong> @(fix.NewUrl?.Length > 60 ? fix.NewUrl.Substring(0, 60) + "..." : fix.NewUrl)
+                                                        </small>
+                                                    </div>
+                                                    @if (fix.UsedStaticFallback)
+                                                    {
+                                                        <span class="badge bg-warning text-dark">Static Fallback</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="badge bg-success">Unsplash API</span>
+                                                    }
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            }
+
+                            @if (Model.Report.Errors.Any())
+                            {
+                                <div class="mt-4">
+                                    <h5>Błędy:</h5>
+                                    <div class="list-group">
+                                        @foreach (var error in Model.Report.Errors)
+                                        {
+                                            <div class="list-group-item log-error">
+                                                <small>@error</small>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            }
+
+                            <div class="mt-4">
+                                <a href="/admin/fix-images" class="btn btn-primary">
+                                    <i class="bi bi-arrow-clockwise"></i>
+                                    Uruchom ponownie
+                                </a>
+                                <a href="/" class="btn btn-secondary">
+                                    <i class="bi bi-house"></i>
+                                    Wróć na stronę główną
+                                </a>
+                            </div>
+                        }
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Jak skonfigurować Unsplash API:</h5>
+                            <ol>
+                                <li>Zarejestruj się na <a href="https://unsplash.com/developers" target="_blank">unsplash.com/developers</a></li>
+                                <li>Utwórz nową aplikację (New Application)</li>
+                                <li>Skopiuj "Access Key"</li>
+                                <li>Wklej klucz w pliku <code>ImageFixerService.cs</code> w linii:<br />
+                                    <code>private const string UNSPLASH_ACCESS_KEY = "TUTAJ_TWÓJ_KLUCZ";</code>
+                                </li>
+                                <li>Zrestartuj aplikację</li>
+                            </ol>
+                            <p class="text-muted small mb-0">
+                                <strong>Limit:</strong> Unsplash API ma limit 50 requestów/godzinę dla darmowego planu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+@functions {
+    public class AdminFixImagesModel : PageModel
+    {
+        private readonly ImageFixerService _imageFixer;
+        private readonly ILogger<AdminFixImagesModel> _logger;
+
+        public ImageFixReport Report { get; set; }
+
+        public AdminFixImagesModel(
+            ImageFixerService imageFixer,
+            ILogger<AdminFixImagesModel> logger)
+        {
+            _imageFixer = imageFixer;
+            _logger = logger;
+        }
+
+        public void OnGet()
+        {
+            // Just display the page
+        }
+
+        public async Task<IActionResult> OnPostAsync()
+        {
+            try
+            {
+                _logger.LogInformation("Starting image fix process...");
+                Report = await _imageFixer.FixAllImagesAsync();
+                _logger.LogInformation("Image fix completed: {Report}", Report);
+                return Page();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error during image fix process");
+                return Page();
+            }
+        }
+    }
+}

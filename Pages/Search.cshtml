@@ -1,0 +1,390 @@
+@page
+@model MocInformacji.Pages.SearchModel
+@{
+    ViewData["Title"] = !string.IsNullOrEmpty(Model.Query) ? $"Wyniki wyszukiwania: {Model.Query}" : "Wyszukiwanie";
+    ViewData["MetaDescription"] = "Wyszukaj interesujące Cię tematy w naszej bazie wiedzy";
+}
+
+<div class="search-page">
+    <div class="search-hero">
+        <div class="container">
+            <h1>
+                <i class="bi bi-search"></i>
+                Wyszukiwanie
+            </h1>
+            
+            <form action="/search" method="get" class="search-form-main">
+                <div class="search-input-group">
+                    <i class="bi bi-search"></i>
+                    <input type="search" name="q" value="@Model.Query" placeholder="Czego szukasz?" class="form-control" autofocus />
+                    <button type="submit" class="btn btn-primary">
+                        Szukaj
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        @if (!string.IsNullOrEmpty(Model.Query))
+        {
+            @if (Model.Results.Any())
+            {
+                <div class="search-info mb-4">
+                    <p class="text-muted">
+                        Znaleziono <strong>@Model.Results.Count</strong> wyników dla:
+                        <strong>"@Model.Query"</strong>
+                    </p>
+                </div>
+
+                <div class="search-results">
+                    @foreach (var article in Model.Results)
+                    {
+                        <article class="search-result-item">
+                            <div class="result-badge">@article.Category</div>
+                            <h2 class="result-title">
+                                <a href="/@article.Category/@article.Slug">
+                                    @article.Title
+                                </a>
+                            </h2>
+                            <p class="result-excerpt">@article.MetaDescription</p>
+                            <div class="result-meta">
+                                <span class="meta-item">
+                                    <i class="bi bi-calendar3"></i>
+                                    @article.LastModified.ToString("dd MMM yyyy")
+                                </span>
+                                <span class="meta-item">
+                                    <i class="bi bi-folder"></i>
+                                    @article.Category
+                                </span>
+                                <a href="/@article.Category/@article.Slug" class="result-link">
+                                    Czytaj więcej
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    }
+                </div>
+            }
+            else
+            {
+                <div class="no-results">
+                    <div class="no-results-icon">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <h2>Nie znaleziono wyników</h2>
+                    <p>Nie znaleźliśmy artykułów pasujących do zapytania <strong>"@Model.Query"</strong></p>
+                    <p class="text-muted">Spróbuj użyć innych słów kluczowych lub przejrzyj nasze kategorie:</p>
+                    
+                    <div class="category-suggestions">
+                        <a href="/finanse" class="category-link">Finanse</a>
+                        <a href="/prawo" class="category-link">Prawo</a>
+                        <a href="/technologia" class="category-link">Technologia</a>
+                        <a href="/zdrowie" class="category-link">Zdrowie</a>
+                        <a href="/biznes" class="category-link">Biznes</a>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="search-suggestions">
+                <h2>Popularne kategorie</h2>
+                <div class="row g-4 mt-3">
+                    <div class="col-md-4">
+                        <a href="/finanse" class="suggestion-card">
+                            <i class="bi bi-cash-coin"></i>
+                            <h3>Finanse</h3>
+                            <p>Kredyty, inwestycje, ubezpieczenia</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/prawo" class="suggestion-card">
+                            <i class="bi bi-shield-check"></i>
+                            <h3>Prawo</h3>
+                            <p>Porady prawne i regulacje</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/technologia" class="suggestion-card">
+                            <i class="bi bi-cpu"></i>
+                            <h3>Technologia</h3>
+                            <p>IT, gadżety, innowacje</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .search-hero {
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+        color: white;
+        padding: 4rem 0 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .search-hero h1 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .search-form-main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .search-input-group {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 3rem;
+        padding: 0.5rem;
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .search-input-group i {
+        position: absolute;
+        left: 1.5rem;
+        color: var(--gray-700);
+        font-size: 1.25rem;
+    }
+    
+    .search-input-group input {
+        flex: 1;
+        border: none;
+        padding: 0.75rem 1rem 0.75rem 3rem;
+        font-size: 1.125rem;
+    }
+    
+    .search-input-group input:focus {
+        outline: none;
+    }
+    
+    .search-input-group button {
+        border-radius: 2rem;
+        padding: 0.75rem 2rem;
+        font-weight: 600;
+    }
+    
+    .search-info {
+        padding: 1.5rem;
+        background: var(--gray-100);
+        border-radius: 0.75rem;
+        border-left: 4px solid var(--primary-color);
+    }
+    
+    .search-results {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .search-result-item {
+        background: white;
+        border: 1px solid var(--gray-200);
+        border-radius: 0.75rem;
+        padding: 2rem;
+        transition: all 0.3s;
+    }
+    
+    .search-result-item:hover {
+        border-color: var(--primary-color);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+    }
+    
+    .result-badge {
+        display: inline-block;
+        background: var(--primary-color);
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 2rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    
+    .result-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+    }
+    
+    .result-title a {
+        color: var(--gray-900);
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    
+    .result-title a:hover {
+        color: var(--primary-color);
+    }
+    
+    .result-excerpt {
+        color: var(--gray-700);
+        line-height: 1.7;
+        margin-bottom: 1rem;
+    }
+    
+    .result-meta {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--gray-200);
+    }
+    
+    .result-meta .meta-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--gray-700);
+        font-size: 0.875rem;
+    }
+    
+    .result-link {
+        margin-left: auto;
+        color: var(--primary-color);
+        font-weight: 600;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        transition: gap 0.2s;
+    }
+    
+    .result-link:hover {
+        gap: 0.5rem;
+    }
+    
+    .no-results {
+        text-align: center;
+        padding: 5rem 0;
+    }
+    
+    .no-results-icon {
+        font-size: 5rem;
+        color: var(--gray-300);
+        margin-bottom: 2rem;
+    }
+    
+    .no-results h2 {
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--gray-900);
+        margin-bottom: 1rem;
+    }
+    
+    .no-results p {
+        font-size: 1.125rem;
+        color: var(--gray-700);
+        margin-bottom: 0.5rem;
+    }
+    
+    .category-suggestions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .category-link {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background: var(--gray-100);
+        color: var(--gray-900);
+        text-decoration: none;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        transition: all 0.2s;
+    }
+    
+    .category-link:hover {
+        background: var(--primary-color);
+        color: white;
+        transform: translateY(-2px);
+    }
+    
+    .search-suggestions h2 {
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--gray-900);
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .suggestion-card {
+        display: block;
+        background: white;
+        border: 1px solid var(--gray-200);
+        border-radius: 0.75rem;
+        padding: 2rem;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    
+    .suggestion-card:hover {
+        border-color: var(--primary-color);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        transform: translateY(-5px);
+    }
+    
+    .suggestion-card i {
+        font-size: 3rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
+    
+    .suggestion-card h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--gray-900);
+        margin-bottom: 0.5rem;
+    }
+    
+    .suggestion-card p {
+        color: var(--gray-700);
+        margin: 0;
+    }
+    
+    @media (max-width: 768px) {
+        .search-hero h1 {
+            font-size: 2rem;
+        }
+        
+        .search-input-group {
+            flex-direction: column;
+            gap: 0.5rem;
+            padding: 1rem;
+        }
+        
+        .search-input-group input {
+            padding: 0.75rem 1rem 0.75rem 3rem;
+        }
+        
+        .search-input-group button {
+            width: 100%;
+        }
+        
+        .result-meta {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .result-link {
+            margin-left: 0;
+        }
+    }
+</style>
