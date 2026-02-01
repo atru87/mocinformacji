@@ -1,0 +1,53 @@
+{
+  "date": "2026-01-29",
+  "fetched_at": "11:50:40",
+  "source": "google_api",
+  "trends": {
+    "zdrowie": [
+      {
+        "keyword": "Modlitwy o zdrowie - najskuteczniejsze teksty i rytuały 2026",
+        "volume": "medium",
+        "rising": true,
+        "original": "modlitwa o zdrowie"
+      },
+      {
+        "keyword": "Jak dbać o zdrowie na co dzień - kompletny przewodnik 2026",
+        "volume": "medium",
+        "rising": true,
+        "original": "dbam o zdrowie"
+      },
+      {
+        "keyword": "Jak zadbać o zdrowie psychiczne - praktyczny poradnik 2026",
+        "volume": "medium",
+        "rising": true,
+        "original": "zdrowie psychiczne"
+      }
+    ],
+    "prawo": [
+      {
+        "keyword": "Podatek od nieruchomości 2026 - stawki, terminy i jak obliczyć",
+        "volume": "medium",
+        "rising": true,
+        "original": "podatek od nieruchomości"
+      }
+    ],
+    "nieruchomosci": [
+      {
+        "keyword": "Jak sprzedać nieruchomość w 2026 - przewodnik krok po kroku",
+        "volume": "medium",
+        "rising": true,
+        "original": "nieruchomości na sprzedaż"
+      },
+      {
+        "keyword": "Jak wycenić nieruchomość w 2026 - metody i narzędzia",
+        "volume": "medium",
+        "rising": true,
+        "original": "wycena nieruchomości"
+      }
+    ]
+  },
+  "metadata": {
+    "total_keywords": 6,
+    "region": "PL"
+  }
+}

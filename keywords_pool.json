@@ -1,0 +1,842 @@
+{
+  "generated_date": "2026-01-29",
+  "pool": [
+    {
+      "keyword": "Jak spłacić kredyt hipoteczny szybciej",
+      "category": "finanse",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Co to jest deflacja ekonomiczna",
+      "category": "finanse",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Kiedy warto zmienić bank na lepszy",
+      "category": "finanse",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak obliczyć rentowność inwestycji w akcje",
+      "category": "finanse",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Dlaczego warto mieć fundusz awaryjny",
+      "category": "finanse",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Podatek dochodowy - jak go rozliczyć",
+      "category": "finanse",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Leasing czy kredyt na samochód",
+      "category": "finanse",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak oszczędzać pieniądze na emeryturę",
+      "category": "finanse",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Co to są obligacje skarbowe",
+      "category": "finanse",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Kiedy refinansować kredyt konsumpcyjny się opłaca",
+      "category": "finanse",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak pozbyć się długów krok po kroku",
+      "category": "finanse",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Ulga rehabilitacyjna - kto może z niej skorzystać",
+      "category": "finanse",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak wybrać ubezpieczenie na życie",
+      "category": "finanze",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Co to jest scoring kredytowy",
+      "category": "finanse",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak dbać o wątrobę w codziennej diecie",
+      "category": "zdrowie",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Dlaczego bolą stawy - przyczyny i leczenie",
+      "category": "zdrowie",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak rozpoznać niedobór witaminy D",
+      "category": "zdrowie",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Co jeść przy problemach z żołądkiem",
+      "category": "zdrowie",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Kiedy iść do kardiologa na badania",
+      "category": "zdrowie",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak wzmocnić odporność naturalnie w domu",
+      "category": "zdrowie",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Dlaczego ważne są regularne badania profilaktyczne",
+      "category": "zdrowie",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak radzić sobie ze stresem w pracy",
+      "category": "zdrowie",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Co to jest zespół metaboliczny",
+      "category": "zdrowie",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak poprawić jakość snu bez leków",
+      "category": "zdrowie",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Dlaczego warto robić stretching codziennie",
+      "category": "zdrowie",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak rozpoznać objawy depresji u siebie",
+      "category": "zdrowie",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Co to są probiotyki i czy działają",
+      "category": "zdrowie",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Kiedy suplementować magnez i potas",
+      "category": "zdrowie",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak wybrać laptop do programowania",
+      "category": "technologia",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Co to jest szyfrowanie danych",
+      "category": "technologia",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Dlaczego smartfon szybko się rozładowuje",
+      "category": "technologia",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak zabezpieczyć telefon przed wirusami",
+      "category": "technologia",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Kiedy warto wymienić router domowy",
+      "category": "technologia",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak wybrać monitor do biura",
+      "category": "technologia",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Co to jest sztuczna inteligencja",
+      "category": "technologia",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Dlaczego komputer działa coraz wolniej",
+      "category": "technologia",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak zabezpieczyć hasła w internecie",
+      "category": "technologia",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Co to jest cloud computing",
+      "category": "technologia",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Kiedy aktualizować oprogramowanie w firmie",
+      "category": "technologia",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak wybrać telewizor do salonu",
+      "category": "technologia",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Dlaczego warto robić kopie zapasowe danych",
+      "category": "technologia",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Co to jest VPN i czy potrzebuję",
+      "category": "technologia",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak motywować zespół do lepszej pracy",
+      "category": "biznes",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Co to jest analiza SWOT firmy",
+      "category": "biznes",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Dlaczego klienci odchodzą do konkurencji",
+      "category": "biznes",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak przygotować biznesplan dla banku",
+      "category": "biznes",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Kiedy warto zatrudnić pierwszego pracownika",
+      "category": "biznes",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak zwiększyć sprzedaż w sklepie internetowym",
+      "category": "biznes",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Co to jest marketing treści",
+      "category": "biznes",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Dlaczego startup kończy się niepowodzeniem",
+      "category": "biznes",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak rozliczyć się z fiskusem",
+      "category": "biznes",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Co to jest lean management",
+      "category": "biznes",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Kiedy zmienić strategię marketingową firmy",
+      "category": "biznes",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak negocjować z dostawcami lepsze ceny",
+      "category": "biznes",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Dlaczego warto automatyzować procesy w firmie",
+      "category": "biznes",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Co to jest customer journey",
+      "category": "biznes",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak napisać testament żeby był ważny",
+      "category": "prawo",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Co to jest alimenty i jak je ustalić",
+      "category": "prawo",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Dlaczego warto mieć pełnomocnictwo notarialne",
+      "category": "prawo",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak rozwiązać umowę o pracę",
+      "category": "prawo",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Kiedy można odwołać się od wyroku",
+      "category": "prawo",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Co to jest klauzula abuzywna",
+      "category": "prawo",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": true,
+      "used_date": "2026-01-29"
+    },
+    {
+      "keyword": "Jak przygotować się do rozwodu",
+      "category": "prawo",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Dlaczego warto sprawdzić umowę przed podpisaniem",
+      "category": "prawo",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Co to są prawa konsumenta",
+      "category": "prawo",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Kiedy można odzyskać pieniądze za wadliwy towar",
+      "category": "prawo",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Jak działa postępowanie egzekucyjne",
+      "category": "prawo",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Co to jest spadek i jak go przyjąć",
+      "category": "prawo",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Dlaczego warto mieć ubezpieczenie prawne",
+      "category": "prawo",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Jak złożyć skargę do rzecznika praw konsumenta",
+      "category": "prawo",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Jak sprawdzić historię pojazdu przed kupnem",
+      "category": "nieruchomosci",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Co to jest księga wieczysta nieruchomości",
+      "category": "nieruchomosci",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Dlaczego warto mieć opinię rzeczoznawcy",
+      "category": "nieruchomosci",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Jak przygotować mieszkanie do sprzedaży",
+      "category": "nieruchomosci",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Kiedy opłaca się kupić mieszkanie na wynajem",
+      "category": "nieruchomosci",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Co to jest hipoteka na nieruchomości",
+      "category": "nieruchomosci",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Jak negocjować cenę przy kupnie domu",
+      "category": "nieruchomosci",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Dlaczego warto sprawdzić plan zagospodarowania",
+      "category": "nieruchomosci",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Co to jest renta wieczysta",
+      "category": "nieruchomosci",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Kiedy można podwyższyć czynsz najemcy",
+      "category": "nieruchomosci",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Jak obliczyć opłacalność inwestycji mieszkaniowej",
+      "category": "nieruchomosci",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Co to są koszty ukryte przy kupnie mieszkania",
+      "category": "nieruchomosci",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Dlaczego warto mieć ubezpieczenie nieruchomości",
+      "category": "nieruchomosci",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Jak przygotować umowę najmu lokalu",
+      "category": "nieruchomosci",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Jak sprawdzić stan techniczny samochodu",
+      "category": "motoryzacja",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Co to jest assistance w ubezpieczeniu",
+      "category": "motoryzacja",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Dlaczego auto traci na wartości",
+      "category": "motoryzacja",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Jak przygotować pojazd do przeglądu technicznego",
+      "category": "motoryzacja",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Kiedy wymienić opony w samochodzie",
+      "category": "motoryzacja",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Co to jest OC i AC w ubezpieczeniu",
+      "category": "motoryzacja",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Jak negocjować cenę w salonie samochodowym",
+      "category": "motoryzacja",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Dlaczego warto sprawdzić VIN przed kupnem",
+      "category": "motoryzacja",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Co to jest leasing operacyjny samochodu",
+      "category": "motoryzacja",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Kiedy opłaca się kupić auto używane",
+      "category": "motoryzacja",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Jak obliczyć koszty utrzymania pojazdu",
+      "category": "motoryzacja",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Co to są koszty rejestracji pojazdu",
+      "category": "motoryzacja",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Dlaczego warto mieć kamerę w samochodzie",
+      "category": "motoryzacja",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Jak przygotować auto do zimy",
+      "category": "motoryzacja",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Kiedy warto skorzystać z faktoringu",
+      "category": "finanse",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Jak obliczyć marżę zysku w biznesie",
+      "category": "biznes",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Co to jest mediacja w sporach",
+      "category": "prawo",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Dlaczego warto inwestować w mieszkania pod wynajem",
+      "category": "nieruchomosci",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Jak wybrać warsztat samochodowy",
+      "category": "motoryzacja",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Co to jest dieta ketogeniczna",
+      "category": "zdrowie",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Kiedy warto wymienić komputer w firmie",
+      "category": "technologia",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Jak rozliczyć koszty podróży służbowych",
+      "category": "finanse",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Dlaczego warto mieć stronę internetową",
+      "category": "biznes",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Co to jest postępowanie spadkowe",
+      "category": "prawo",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Jak sprawdzić zadłużenie nieruchomości",
+      "category": "nieruchomosci",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    },
+    {
+      "keyword": "Kiedy wymienić akumulator w aucie",
+      "category": "motoryzacja",
+      "generated_by": "ai_expansion",
+      "generated_date": "2026-01-29",
+      "used": false
+    }
+  ],
+  "stats": {
+    "total": 110,
+    "used": 62,
+    "remaining": 48
+  }
+}

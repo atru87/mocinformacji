@@ -1,0 +1,335 @@
+{
+  "generated_date": "2026-01-30",
+  "vs_comparisons": [
+    {
+      "a": "Kredyt hipoteczny",
+      "b": "Kredyt gotówkowy",
+      "category": "finanse",
+      "priority": 10
+    },
+    {
+      "a": "Leasing",
+      "b": "Kredyt na samochód",
+      "category": "finanse",
+      "priority": 10
+    },
+    {
+      "a": "Lokata bankowa",
+      "b": "Obligacje skarbowe",
+      "category": "finanse",
+      "priority": 9
+    },
+    {
+      "a": "IKE",
+      "b": "IKZE",
+      "category": "finanse",
+      "priority": 9
+    },
+    {
+      "a": "Karta kredytowa",
+      "b": "Karta debetowa",
+      "category": "finanse",
+      "priority": 9
+    },
+    {
+      "a": "Kredyt stały",
+      "b": "Kredyt zmienny",
+      "category": "finanse",
+      "priority": 8
+    },
+    {
+      "a": "Refinansowanie kredytu",
+      "b": "Konsolidacja kredytów",
+      "category": "finanse",
+      "priority": 8
+    },
+    {
+      "a": "Rozliczenie PIT",
+      "b": "Ryczałt",
+      "category": "finanse",
+      "priority": 8
+    },
+    {
+      "a": "Fundusz inwestycyjny",
+      "b": "ETF",
+      "category": "finanse",
+      "priority": 7
+    },
+    {
+      "a": "Oszczędzanie",
+      "b": "Inwestowanie",
+      "category": "finanse",
+      "priority": 7
+    },
+    {
+      "a": "Akcje",
+      "b": "Obligacje",
+      "category": "finanse",
+      "priority": 7
+    },
+    {
+      "a": "Podatek liniowy",
+      "b": "Skala podatkowa",
+      "category": "finanse",
+      "priority": 7
+    },
+    {
+      "a": "Kredyt gotówkowy",
+      "b": "Pożyczka ratalna",
+      "category": "finanse",
+      "priority": 6
+    },
+    {
+      "a": "Rachunek oszczędnościowy",
+      "b": "Lokata terminowa",
+      "category": "finanse",
+      "priority": 6
+    },
+    {
+      "a": "Zakup za gotówkę",
+      "b": "Zakup na kredyt",
+      "category": "finanse",
+      "priority": 6
+    },
+    {
+      "a": "Dieta ketogeniczna",
+      "b": "Dieta low-carb",
+      "category": "zdrowie",
+      "priority": 9
+    },
+    {
+      "a": "Trening siłowy",
+      "b": "Trening cardio",
+      "category": "zdrowie",
+      "priority": 9
+    },
+    {
+      "a": "Białko serwatkowe",
+      "b": "Białko roślinne",
+      "category": "zdrowie",
+      "priority": 8
+    },
+    {
+      "a": "Bieżnia",
+      "b": "Rower stacjonarny",
+      "category": "zdrowie",
+      "priority": 7
+    },
+    {
+      "a": "Joga",
+      "b": "Pilates",
+      "category": "zdrowie",
+      "priority": 7
+    },
+    {
+      "a": "Szpital publiczny",
+      "b": "Szpital prywatny",
+      "category": "zdrowie",
+      "priority": 8
+    },
+    {
+      "a": "NFZ",
+      "b": "Prywatna opieka medyczna",
+      "category": "zdrowie",
+      "priority": 8
+    },
+    {
+      "a": "Suplementy",
+      "b": "Naturalna dieta",
+      "category": "zdrowie",
+      "priority": 6
+    },
+    {
+      "a": "Dieta wegańska",
+      "b": "Dieta wegetariańska",
+      "category": "zdrowie",
+      "priority": 6
+    },
+    {
+      "a": "Trening rano",
+      "b": "Trening wieczorem",
+      "category": "zdrowie",
+      "priority": 5
+    },
+    {
+      "a": "iPhone",
+      "b": "Android",
+      "category": "technologia",
+      "priority": 10
+    },
+    {
+      "a": "Windows",
+      "b": "macOS",
+      "category": "technologia",
+      "priority": 9
+    },
+    {
+      "a": "SSD",
+      "b": "HDD",
+      "category": "technologia",
+      "priority": 8
+    },
+    {
+      "a": "Wi-Fi",
+      "b": "Ethernet",
+      "category": "technologia",
+      "priority": 7
+    },
+    {
+      "a": "VPN darmowy",
+      "b": "VPN płatny",
+      "category": "technologia",
+      "priority": 9
+    },
+    {
+      "a": "Laptop",
+      "b": "Komputer stacjonarny",
+      "category": "technologia",
+      "priority": 8
+    },
+    {
+      "a": "Dysk w chmurze",
+      "b": "Dysk lokalny",
+      "category": "technologia",
+      "priority": 7
+    },
+    {
+      "a": "Antywirus darmowy",
+      "b": "Antywirus płatny",
+      "category": "technologia",
+      "priority": 6
+    },
+    {
+      "a": "Chrome",
+      "b": "Firefox",
+      "category": "technologia",
+      "priority": 6
+    },
+    {
+      "a": "Intel",
+      "b": "AMD",
+      "category": "technologia",
+      "priority": 7
+    },
+    {
+      "a": "B2B",
+      "b": "B2C",
+      "category": "biznes",
+      "priority": 9
+    },
+    {
+      "a": "E-commerce",
+      "b": "Sklep stacjonarny",
+      "category": "biznes",
+      "priority": 8
+    },
+    {
+      "a": "Dropshipping",
+      "b": "Własny magazyn",
+      "category": "biznes",
+      "priority": 8
+    },
+    {
+      "a": "Facebook Ads",
+      "b": "Google Ads",
+      "category": "biznes",
+      "priority": 9
+    },
+    {
+      "a": "Email marketing",
+      "b": "Social media marketing",
+      "category": "biznes",
+      "priority": 7
+    },
+    {
+      "a": "Outsourcing",
+      "b": "Własny zespół",
+      "category": "biznes",
+      "priority": 7
+    },
+    {
+      "a": "Startup",
+      "b": "Franczyza",
+      "category": "biznes",
+      "priority": 6
+    },
+    {
+      "a": "Spółka",
+      "b": "Działalność gospodarcza",
+      "category": "biznes",
+      "priority": 8
+    },
+    {
+      "a": "Umowa o pracę",
+      "b": "Umowa zlecenie",
+      "category": "prawo",
+      "priority": 10
+    },
+    {
+      "a": "Umowa o dzieło",
+      "b": "Umowa zlecenie",
+      "category": "prawo",
+      "priority": 9
+    },
+    {
+      "a": "Rozwód",
+      "b": "Separacja",
+      "category": "prawo",
+      "priority": 8
+    },
+    {
+      "a": "Testament notarialny",
+      "b": "Testament holograficzny",
+      "category": "prawo",
+      "priority": 7
+    },
+    {
+      "a": "Mediacja",
+      "b": "Proces sądowy",
+      "category": "prawo",
+      "priority": 7
+    },
+    {
+      "a": "Kupno mieszkania",
+      "b": "Wynajem mieszkania",
+      "category": "nieruchomosci",
+      "priority": 10
+    },
+    {
+      "a": "Mieszkanie",
+      "b": "Dom",
+      "category": "nieruchomosci",
+      "priority": 9
+    },
+    {
+      "a": "Nowe mieszkanie",
+      "b": "Używane mieszkanie",
+      "category": "nieruchomosci",
+      "priority": 8
+    },
+    {
+      "a": "Centrum miasta",
+      "b": "Przedmieścia",
+      "category": "nieruchomosci",
+      "priority": 7
+    },
+    {
+      "a": "Rynek pierwotny",
+      "b": "Rynek wtórny",
+      "category": "nieruchomosci",
+      "priority": 8
+    },
+    {
+      "a": "Wynajem długoterminowy",
+      "b": "Wynajem krótkoterminowy",
+      "category": "nieruchomosci",
+      "priority": 7
+    },
+    {
+      "a": "Mieszkanie za gotówkę",
+      "b": "Mieszkanie na kredyt",
+      "category": "nieruchomosci",
+      "priority": 9
+    }
+  ]
+}

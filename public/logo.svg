@@ -1,0 +1,14 @@
+<svg width="400" height="80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="10" y="50" font-family="Inter, sans-serif" font-size="32" font-weight="700" fill="url(#grad)">
+    MocInformacji
+  </text>
+  <text x="280" y="50" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#667eea">
+    .pl
+  </text>
+</svg>
